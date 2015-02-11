@@ -1,0 +1,70 @@
+@import "bourbon"
+@import "_normalize"
+@import "_media-queries"
+
+//colors
+
+$blue: #37A9F8
+$mid-blue: #1D79B4
+$dark-blue: #216B95
+$white: #fff
+$grey: #9B9B9B
+
+
+//fonts
+
+$asset-pipeline: true
+
+$font: "Helvetica Neue","Helvetica", Sans, Arial
+
+// @include font-face(glyphicons, 'glyphicons-halflings-regular')
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css")
+
+
+
+
+@mixin bold($font-size: 13px, $line-height: 21px)
+  font: 700 #{$font-size}/#{$line-height} $font
+  -webkit-font-smoothing: antialiased
+
+@mixin light($font-size: 13px, $line-height: 21px)
+  font: 300 #{$font-size}/#{$line-height} $font
+  -webkit-font-smoothing: antialiased
+
+@mixin medium($font-size: 13px, $line-height: 21px)
+  font: 500 #{$font-size}/#{$line-height} $font
+  -webkit-font-smoothing: antialiased
+
+@mixin icon
+  font-family: 'Glyphicons Halflings', glyphicons
+  font-style: normal
+  font-weight: normal
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+
+$break-small: 700px
+$break-tablet: 890px
+$break-hd: 1024px
+
+@mixin mobile
+  @media only screen and (max-width: $break-small - 1)
+    @content
+  +iphone4
+    @content
+  +iphone5
+    @content
+  +iphone6(portrait)
+    @content
+
+
+@mixin tablet
+  +screen($break-small, $break-tablet)
+    @content
+  +ipad(portrait)
+    @content
+
+@mixin hd
+  @media only screen and (min-width: $break-hd)
+    @content
+
+

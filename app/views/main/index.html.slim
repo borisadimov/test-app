@@ -1,0 +1,107 @@
+
+.header
+  .signup_panel
+    .container.first_step
+      .steps
+        .step.active
+          .number 1
+          p Sign up
+        .step
+          .number 2
+          p Get started
+
+      h2 Developer free sign up
+      .new_account
+        p Set up your Nuwe account
+        form(class="sign_up_form")
+          label(for="name")
+            input(type="text" placeholder="Name" name="name")
+          label(for="email")
+            input(type="text" placeholder="E-mail" name="email")
+          label(for="password")
+            input(type="password" placeholder="Password" name="password")
+
+      .oauth
+        p Or you can login with
+        .button.github GitHub
+        .button.facebook Facebook
+        .button.twitter Twitter
+
+
+      a.signup_button(href="#") Developer free sign up
+
+      p.terms
+        | By signing up you confirm to agree to the
+        a<>(href="#") Terms of Service
+        | and
+        a<>(href="#") Privacy Policy
+
+
+    .container.second_step
+      .steps
+        .step
+          .number 1
+          p Sign up
+        .step.active
+          .number 2
+          p Get started
+
+      .name_your_app
+        h2 Developer free sign up
+        p Set up your Nuwe account
+        form(class="name_app")
+          label(for="appname")
+            input.appname(type="text" placeholder="Your app name" name="appname")
+
+        a.get_started(href="#")
+          | Let's get started
+
+      .app_demo
+
+        .left_panel
+          h3.app_name Your app name
+
+          p Created just now
+
+          .toggler
+
+            .circle
+
+
+          p.dev DEV
+
+        .right_panel
+
+
+
+
+
+
+
+
+
+
+
+    .close
+
+  .navbar
+    .logo
+
+    .menu
+      .show_menu
+      .list
+        a(href="#") Documentation
+        a(href="#") Resources
+        a(href="#") Blog
+
+    .mobile_menu
+      a(href="#") Documentation
+      a(href="#") Resources
+      a(href="#") Blog
+
+    .login_type
+      a.plus(href="#") +
+      a.login(href="#") Log in
+      a.signup(href="#") Developer free sign up
+
+

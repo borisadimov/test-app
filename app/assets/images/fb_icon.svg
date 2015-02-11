@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="21px" viewBox="0 0 10 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD-Sign-up-Step1" sketch:type="MSArtboardGroup" transform="translate(-913.000000, -348.000000)" fill="#FFFFFF">
+            <g id="Facebook-btn" sketch:type="MSLayerGroup" transform="translate(887.000000, 337.000000)">
+                <path d="M32.3593077,31.4961781 L32.3593077,21.2468891 L35.1885598,21.2468891 L35.5634968,17.7149273 L32.3593077,17.7149273 L32.3641146,15.9471464 C32.3641146,15.0259564 32.45164,14.5323618 33.7747349,14.5323618 L35.5434681,14.5323618 L35.5434681,11 L32.7138155,11 C29.3149476,11 28.1186343,12.7133815 28.1186343,15.5947503 L28.1186343,17.7153273 L26,17.7153273 L26,21.2472891 L28.1186343,21.2472891 L28.1186343,31.4961781 L32.3593077,31.4961781 Z" id="Path" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

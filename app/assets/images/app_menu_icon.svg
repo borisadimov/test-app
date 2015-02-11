@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="14px" viewBox="0 0 24 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Sign-up-Step2" sketch:type="MSArtboardGroup" transform="translate(-369.000000, -274.000000)">
+            <g id="App" sketch:type="MSLayerGroup" transform="translate(180.000000, 241.000000)">
+                <g id="Menu-2" transform="translate(189.000000, 33.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0.6,0 L23.4,0 C23.7314182,0 24,0.260403846 24,0.581730769 L24,1.53365385 C24,1.85498077 23.7314182,2.11538462 23.4,2.11538462 L0.6,2.11538462 C0.268581818,2.11538462 0,1.85498077 0,1.53365385 L0,0.581730769 C0,0.260403846 0.268581818,0 0.6,0 L0.6,0 Z" id="Shape" fill="#6F6F6F"></path>
+                    <path d="M0.6,5.81730769 L23.4,5.81730769 C23.7314182,5.81730769 24,6.07771154 24,6.39903846 L24,7.35096154 C24,7.67228846 23.7314182,7.93269231 23.4,7.93269231 L0.6,7.93269231 C0.268581818,7.93269231 0,7.67228846 0,7.35096154 L0,6.39903846 C0,6.07771154 0.268581818,5.81730769 0.6,5.81730769 L0.6,5.81730769 Z" id="Shape" fill="#666666"></path>
+                    <path d="M0.6,11.6346154 L23.4,11.6346154 C23.7314182,11.6346154 24,11.8950192 24,12.2163462 L24,13.1682692 C24,13.4895962 23.7314182,13.75 23.4,13.75 L0.6,13.75 C0.268581818,13.75 0,13.4895962 0,13.1682692 L0,12.2163462 C0,11.8950192 0.268581818,11.6346154 0.6,11.6346154 L0.6,11.6346154 Z" id="Shape" fill="#6F6F6F"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

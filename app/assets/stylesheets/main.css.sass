@@ -1,0 +1,506 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bourbon"
+@import "_settings"
+
+body
+  +bold(16px,20px)
+  background: image-url("hero_image.png") center center no-repeat
+  background-size: cover
+  min-height: 100vh
+
+  *
+    box-sizing: border-box
+
+  a
+    text-decoration: none
+
+  h2
+    +bold(36px, 44px)
+
+
+
+.header
+  position: absolute
+  top: -652px
+  left: 0
+  width: 100%
+  +transition(top 0.7s ease)
+  &.dropped
+    top: 0
+
+
+  .navbar
+    height: 100px
+    background: #fff
+    vertical-align: middle
+    +mobile
+      height: 70px
+
+    .logo
+      margin: 30px 0 0 40px
+      width: 159px
+      height: 41px
+      background: image-url("logo.svg") center center no-repeat
+      background-size: cover
+      display: inline-block
+      +mobile
+        margin: 24px 0 0 22px
+        width: 84px
+        height: 22px
+
+    .menu
+      display: inline-block
+      height: 100px
+      position: absolute
+      right: 337px
+      bottom: 0
+      padding-top: 38px
+
+      .show_menu
+        display: none
+        cursor: pointer
+        &:before
+          display: block
+          content: ""
+          position: absolute
+          top: 42px
+          width: 29px
+          height: 18px
+          background: image-url("menu_icon.svg") center center no-repeat
+          background-size: cover
+          +mobile
+            top: 27px
+
+      +mobile
+        height: 70px
+        right: 133px
+
+        .show_menu
+          display: block
+        .list
+          display: none
+      +tablet
+        min-width: 60px
+        .show_menu
+          display: block
+        .list
+          display: none
+      a
+        color: $grey
+        +bold(16px,16px)
+        margin-right: 30px
+        +transition(color 0.3s ease)
+        &:hover
+          color: lighten($grey, 10%)
+
+
+    .mobile_menu
+      display: none
+
+      width: 100%
+      position: absolute
+      top: 100%
+      background: $white
+
+      a
+        padding: 30px
+        display: block
+        text-align: center
+        color: $grey
+        +bold(16px,16px)
+        margin-right: 30px
+        +transition(color 0.3s ease)
+        &:hover
+          color: lighten($grey, 10%)
+
+
+
+    .login_type
+      display: block
+      height: 100px
+      position: absolute
+      right: 0
+      background: $blue
+      bottom: 0
+      width: 337px
+      padding-top: 27px
+      padding-left: 10px
+
+      +mobile
+        height: 70px
+        width: 70px
+        padding: 0
+
+
+      a
+        color: $white
+        display: inline-block
+
+
+        &.plus
+          display: none
+          padding: 20px 23px
+          +light(40px)
+          +mobile
+            display: block
+
+        &.login
+          margin: 10px 21px 0px 21px
+          +mobile
+            display: none
+
+
+        &.signup
+          background: $dark-blue
+          border-radius: 40px
+          border: 2px solid $dark-blue
+          padding: 9px 19px 11px 19px
+          +transition(background-color 0.3s ease, border-color 0.3s ease)
+          +mobile
+            display: none
+          &:hover
+            background-color: $blue
+            border-color: $white
+
+
+
+
+  .signup_panel
+    height: 652px
+    background: $blue
+    .first_step
+      // display: none
+    .container
+      padding-top: 80px
+      max-width: 730px
+      min-height: 445px
+      margin: 0 auto
+      color: #fff
+      +clearfix()
+      +tablet
+        padding: 18px 21px
+        padding-top: 80px
+      +mobile
+        padding: 18px 21px
+        width: 100%
+
+
+    .steps
+      .step
+        display: inline-block
+        margin-right: 106px
+        &:first-child
+          .number
+            padding-left: 13px
+        +mobile
+          display: none
+        .number
+          display: inline-block
+          border: 3px solid $white
+          border-radius: 500px
+          width: 46px
+          height: 46px
+          font-size: 27px
+          padding: 10px 12px
+          background-color: $blue
+          margin-right: 3px
+          +transition(background-color 0.3s ease)
+        p
+          display: inline-block
+          position: relative
+          top: -4px
+          +light(16px)
+
+        &.active
+          +mobile
+            display: inline-block
+          .number
+            background-color: $mid-blue
+    h2
+      margin-bottom: 10px
+    .new_account
+      display: inline-block
+      vertical-align: top
+      +mobile
+        width: 100%
+      p
+        margin-top: 0
+        margin-bottom: 0
+        padding-bottom: 30px
+        +light(16px,16px)
+
+
+        display: inline-block
+
+      form
+        width: 437px
+        +mobile
+          width: 100%
+      input
+        width: 437px
+        height: 48px
+        padding: 13px 14px
+        border: none
+        margin-bottom: 5px
+        border-radius: 4px
+        outline: none !important
+        position: relative
+        +mobile
+          width: 100%
+
+      label
+        position: relative
+        &.valid
+          &:after
+            position: absolute
+            display: block
+            content: ""
+            background: image-url("check.svg") center center no-repeat
+            background-size: cover
+            width: 18px
+            height: 14px
+            top: 4px
+            right: 13px
+        &.invalid
+          &:after
+            position: absolute
+            display: block
+            content: ""
+            background: image-url("fail.svg") center center no-repeat
+            background-size: cover
+            width: 18px
+            height: 17px
+            top: 2px
+            right: 13px
+
+    .oauth
+      display: inline-block
+      vertical-align: top
+      margin-left: 60px
+      position: relative
+      +mobile
+        top: 85px
+        margin-left: 0
+        width: 100%
+      p
+
+        display: inline-block
+        margin-top: 0
+        margin-bottom: 0
+        padding-bottom: 30px
+        +light(16px,16px)
+        +mobile
+          display: block
+
+      .button
+        width: 168px
+        border-radius: 40px
+        padding: 13px 52px 15px 56px
+        margin-bottom: 5px
+        position: relative
+        cursor: pointer
+        +mobile
+          display: inline-block
+          width: 30%
+          height: 72px
+          border-radius: 10px
+          margin-right: 3%
+          padding: 0
+          padding-top: 42px
+          text-align: center
+          &:nth-child(4n)
+            margin-right: 0
+
+
+        &.github
+          background: #678090 image-url("gh_icon.svg") 23px 12px no-repeat
+          +mobile
+            background-position: 50% 13px
+
+        &.facebook
+          background: #3B5998 image-url("fb_icon.svg") 28px 12px no-repeat
+          +mobile
+            background-position: 50% 13px
+        &.twitter
+          background: #4A90E2 image-url("tw_icon.svg") 24px 15px no-repeat
+          +mobile
+            background-position: 50% 13px
+
+
+    .signup_button, .get_started
+      color: #fff
+      display: inline-block
+      margin-top: 30px
+      +bold(20px,20px)
+      background: $mid-blue
+      border-radius: 40px
+      border: 2px solid $mid-blue
+      padding: 14px 28px 18px 28px
+      position: relative
+      +transition(background-color 0.3s ease, border-color 0.3s ease)
+      +mobile
+        width: 100%
+        top: -146px
+        text-align: center
+
+
+
+      &:hover
+        background-color: $blue
+        border-color: $white
+
+    p.terms
+      +light(14px)
+      text-align: center
+      margin-top: 75px
+      +mobile
+        margin: 16px auto
+        width: 290px
+      a
+        color: $mid-blue
+        +medium(14px)
+
+    .second_step
+      display: none
+      .steps
+        margin-bottom: 114px
+        +mobile
+          margin-bottom: 20px
+
+
+      .name_your_app
+        float: right
+        width: 440px
+        +tablet
+          width: 420px
+        +mobile
+          float: none
+          margin: 0 auto
+          .get_started
+            top: 0
+        h2
+          margin-top: 0
+
+        p
+          margin-top: 0
+        input
+          width: 389px
+          height: 48px
+          padding: 13px 14px
+          border: none
+          margin-bottom: 5px
+          border-radius: 4px
+          outline: none !important
+          position: relative
+          +mobile
+            width: 100%
+
+
+      .app_demo
+        width: 229px
+        height: 229px
+        display: inline-block
+        float: right
+        margin-right: 60px
+        background: #F1F1F2
+        border-radius: 12px
+        overflow: hidden
+        +tablet
+          margin-right: 30px
+        +mobile
+          float: none
+          margin: 50px auto
+          display: block
+        +clearfix()
+
+        .left_panel
+          width: 172px
+          height: 229px
+          float: left
+          border-radius: 12px 0 0 12px
+          text-align: center
+          h3
+            color: #666666
+            font-size: 18px
+            margin: 25px 0 10px 0
+            max-height: 40px
+            overflow: hidden
+          p
+            font-size: 12px
+            color: #C1C1C1
+            line-height: 14px
+          .toggler
+            background: #ED1C24
+            box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.11)
+            border-radius: 40px
+            width: 77px
+            height: 43px
+            display: inline-block
+            position: relative
+            margin-top: 35px
+            .circle
+              position: absolute
+              left: -1px
+              top: 0
+              width: 43px
+              height: 43px
+
+              border-radius: 500px
+              background: #FFFFFF
+              box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.11)
+              +transition(left 0.5s ease)
+        .right_panel
+          float: left
+          width: 57px
+          height: 229px
+          background: #F8F8F9 image-url("app_menu_icon.svg") 50% 15px no-repeat
+          border-radius: 0 12px 12px 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .close
+      position: absolute
+      top: 33px
+      right: 26px
+      width: 37px
+      height: 37px
+      background: image-url("close-icon.svg") center center no-repeat
+      background-size: cover
+      cursor: pointer
+      +transition(background-color 0.3s ease)
+      border-radius: 500px
+
+      +mobile
+        top: 18px
+        right: 21px
+
+      &:hover
+        background-color: $mid-blue
+
+
+
+
+
+
+
