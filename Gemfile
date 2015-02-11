@@ -7,10 +7,10 @@ gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass', '3.3.7'
-gem 'sass-rails', '~> 4.0.1'
-gem 'sprockets', '2.11.0'
-gem 'sprockets-rails', '2.0.1'
+gem 'sass'
+gem 'sass-rails'
+gem 'sprockets'
+gem 'sprockets-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
